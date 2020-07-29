@@ -1,0 +1,151 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f8f4f4;
+}
+.conteiner{
+    box-shadow: 1px 1px 10px black;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+header{
+    background-color: rgb(229, 243, 241);
+    max-width: 600px;
+    margin: 10px auto 0px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h2{
+    font-size: 49px;
+    margin: 10px;
+}
+header p{
+    margin: 10px;
+    font-size: 22px;
+}
+
+header input{
+    height: 45px;
+    width: 330px;
+    font-size: 23px;
+    padding: 20px 5px;
+    border-radius: 5px;
+}
+
+
+#book-list{
+    max-width: 600px;
+    padding: 40px;
+    margin: 0px auto 5px auto;
+    background: linear-gradient(70deg, rgb(245, 253, 255), rgb(243, 242, 242));
+}
+
+
+#book-list h2{
+    color: teal;
+    font-size: 45px;
+}
+
+#book-list ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 5px 2px;
+    padding: 15px;
+    background: white;
+    font-size: 19px;
+    border: 1px solid whitesmoke;
+    border-left: 10px rgb(151, 150, 150) solid;
+
+}
+
+.delete{
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px green solid;
+    border-radius: 4px;
+    background: darkcyan;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    min-width: 100px;
+    
+}
+
+#book-list ul li:hover{
+    border-left-color: rgb(222, 229, 253);
+}
+
+#book-list .delete:hover{
+    transition: 0.4s;
+    background: rgba(27, 34, 39, 0.979);
+}
+
+.add-book{
+    max-width: 600px;
+    margin: 10px auto 0px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+.add-book input{
+    height: 45px;
+    width: 400px;
+    width: auto;
+    padding: 5px 5px;
+    font-size: 22px;
+    margin: 0;
+    outline: none;
+    border: rgb(133, 5, 145) solid 1.5px;
+}
+
+.add-book button{
+    font-size: 22px;
+    margin-left: -5px;
+    padding: 5px 5px;
+    height: 45px;
+    outline: none;
+    border: 1px black solid;
+    background: rgb(133, 5, 145);
+    color: rgb(195, 241, 28);
+    cursor: pointer;
+}
+.add-book button:hover{
+    transition: 0.5s;
+    background-color: rgb(84, 18, 90);
+}
+
+.test{
+    transition: 0.21s;
+    opacity: .2;
+    transform: skewY(7deg);
+}
+
+@media(max-width: 900px){
+    .delete{
+        min-width: 80px;
+        max-width: 90px;
+        font-size: 17px;
+        text-align: left;
+    }
+    #add-book{
+        font-size: 19px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+.show-messege{
+    color: red;
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

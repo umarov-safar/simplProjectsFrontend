@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: url("../img/haker.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+header{
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+}
+
+header .logo a{
+    color: #D83953;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s ease all;
+}
+
+header .logo a > span{
+    color: #ffffff;
+}
+header .logo a:hover{
+    color: #ffffff;
+}
+header .logo a:hover > span{
+    color: #D83953;
+}
+header .navbar{
+    display: flex;
+}
+
+header .navbar li{ 
+    margin-left: 40px;
+}
+
+header .navbar li a{ 
+    padding: 10px 10px 15px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.30s ease all;
+    position: relative;
+}
+
+header .navbar li a:hover::after{ 
+    content: " ";
+    width: 35px;
+    height: 3px;
+    background: #D83953;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+
+
+.container {
+    padding: 50px 30px 30px 30px;
+    max-width: 1600px;
+    margin: auto;
+    color: white;
+    width: 100%;
+    height: 80%;
+}
+
+.container .agancy {
+    margin-top: 40px;
+}
+
+.container .agancy span{
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    margin-bottom: 30px;
+    background: #D83953;
+}
+
+.container .agancy  h1{ 
+    color: white;
+    font-size: 100px;
+    max-width: 700px;
+    line-height: 5rem;
+}
+
+.container .agancy a{ 
+    margin-top: 50px;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px 35px;
+    border: 2px #D83953 solid;
+    
+}
+
+.container .agancy a:hover{
+    background: #D83953;
+    border-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+}
+
+.container .boxes{
+    margin-top: 110px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.container .boxes > div {
+    background: rgb(24, 23, 23);
+    margin: 10px;
+    width: 25%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.container .boxes > div:hover
+{
+    background: #D83953;;
+}
+
+.container .boxes > div i {
+    display: inline-block;
+    margin: 40px 25px;
+    font-size: 40px;
+    color: #D83953;
+}
+
+.container .boxes > div:hover > i {
+    color: white;
+}
+
+.container .boxes > div h3{
+    margin:  10px 10px 30px 25px;
+    font-size: 30px;
+    position: relative;
+}
+
+.container .boxes > div:hover h3::after{
+    background: white;
+}
+
+.container .boxes > div h3::after{ 
+    content: " ";
+    width: 35px;
+    height: 3px;
+    background: #D83953;
+    display: inline-block;
+    position: absolute;
+    bottom: -40%;
+    left: 0%;
+
+}
+
+
+
+.container .boxes > div p {
+    margin:  20px 10px 30px 25px;
+    font-size: 20px;
+    line-height: 1.7rem;
+
+}
+.container .boxes > div:last-child {
+    position: relative;
+    z-index: 9999;
+}
+.botton-color{
+    display: inline-block;
+    position: absolute;
+    width: 22%;
+    height: 7%;
+    right: 8%;
+    bottom: -2%;
+    background: #D83953;
+    margin-left: -20px;
+    z-index: -1;
+}

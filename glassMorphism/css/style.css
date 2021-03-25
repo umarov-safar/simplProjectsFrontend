@@ -1,0 +1,131 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: url("../images/bg10.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.glass {
+    width: 1500px;
+    height: 90vh;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 1px 2px  5px #000;
+    background: rgba(222, 222, 222, 0.2);
+    backdrop-filter: blur(10px);
+    background: rgba( 235, 235, 235, 0.2);
+    box-shadow: 0 8px 15px  rgba(80, 83, 128, 0.37);
+    backdrop-filter: blur(7px);
+}
+
+.glass .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+}
+
+.glass .navbar .logo{
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.glass .navbar ul{
+    display: flex;
+    margin-right: -90px;
+}
+
+.glass .navbar ul li{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.glass .navbar ul li a{ 
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(37, 36, 36);
+    transition: all ease 0.2s;
+}
+
+.glass .navbar ul li a:hover{
+    color: rgba(0, 0, 0, 0.787);
+}
+
+.glass .navbar .btn {
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 13px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.1s all ease;
+    box-shadow: 0.2px 0.2px 20px  rgba(17, 9, 9, 0.2);
+}
+
+
+.glass .navbar .btn:hover{
+    background: #000;
+    color: white;
+}
+
+.glass .about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.glass .about p{ 
+    width: 600px;
+}
+
+.glass .page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #525252;
+    font-size: 70px;
+}
+
+.glass .about p.text1{
+    font-size: 24px;
+}
+
+.glass .about h2{
+    font-size: 36px;
+}
+
+.glass .about p.text2{
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.glass .about .btnAbout {
+    background: #000;
+    padding: 13px 35px;
+    font-size: 23px;
+    border-radius: 30px;
+    color: white;   
+    margin-top: 10px;
+    display: inline-block;
+    box-shadow: 0.3px 0.2px 22px rgb(77, 75, 75);
+    transition:  0.2s ease all;
+}
+
+.glass .about .btnAbout:hover{ 
+    background: white;
+    color: black;
+}

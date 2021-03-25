@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css?1">
+    <title>Some work with localStorage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="id" class="container mt-4">
+        <h1 class="display-5 text-info text-center">
+            Our book List
+        </h1>
+        <form  id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id='title' class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id='author' class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">id_name</label>
+                <input type="text" id='isbn' class="form-control">
+            </div>
+      
+                <input type="submit" value="ADD A BOOK" 
+                class="btn btn-success btn-block">
+        </form>
+
+        <table class="table table-sstriped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Id_name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

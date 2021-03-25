@@ -1,0 +1,276 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: url("svg/background.svg"); */
+    background: #EAEAEA;
+
+}   
+
+
+/* NAV BAR  */
+header{
+    background: #5E54CE;
+    border-radius: 0px;
+    box-shadow: 0.3px 0.3px 9px black;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    align-content: center;
+    margin: auto;
+    max-width: 1920px;
+}
+
+header nav .logo{
+    font-size: 60.3px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    line-height: 67px;
+    letter-spacing: -0.14em;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+header nav .logo svg{
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    color: white;
+ }
+
+header nav ul li{
+    display: inline;
+    list-style: none;
+
+}
+header nav ul li a{
+    font-size: 22px;
+    font-weight: 300;
+    color: #EAEAEA;
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header nav ul li a:hover{
+    color: #ffffff;
+    transition: 0.3s ease-in;
+}
+
+header nav .phone{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* MAIN  SECTION */
+section {
+    background: url("svg/bg_curve1.svg") no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    height: 100vh;
+    display: flex;
+}
+
+/* CONTAINER DIV FOR FLEXING DIVS */
+section .container{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* DIV TEXTS END BUTTON */
+section .text{
+    align-self: center;
+    height: 400px;
+    margin-top: -100px;
+}
+
+section .text h1{
+    font-size: 70px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .text p{
+    color: white;
+    margin: 30px 0 40px;
+    font-size: 32px ;
+    max-width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .text a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 48px;
+    text-align: left;
+    padding: 16px;
+    background: #fff;
+    color: #697FEF;
+    border-radius:  9.14px;
+}
+
+
+
+/* RIGHT DIV "CIRCELS" */
+
+section .circles{
+    align-self: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: -120px;
+
+}
+section .circles div{
+    width: 132px;
+    height: 132px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 3px rgb(197, 197, 197),
+                -1px -1px 1px 3px rgb(197, 197, 197);
+}
+
+section .circles div.icon1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .circles div.icon2{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+section .circles div.icon3{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .circles div.icon4{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+section .circles div .pos{
+    position: relative;
+}
+
+
+section .circles div .pos i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #6367DD;
+ 
+}
+
+section .circles div  .pos p {
+    background: #000;
+    color: white;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    width: 150px;
+    padding: 10px;
+    border: 10px;
+    z-index: 3;
+}
+
+
+section .circles div.icon1 .pos p {
+    top: -45%;
+    left: -40%;
+}
+
+section .circles div.icon2 .pos p {
+    top: -45%;
+    left: 17%;
+   
+}
+section .circles div.icon3 .pos p {
+    top: -45%;
+    left: -40%;
+}
+
+section .circles div.icon4 .pos p {
+    top: -40%;
+    left: 10%;
+}
+
+section .circles div  .pos .end{
+    position: relative;
+}
+
+section .circles div  .pos .end i{
+    color: black;
+    position: absolute;
+    bottom: 100%;
+    font-size: 60px;
+    z-index: -1;
+}
+section .circles div  .pos .end .needly{
+    font-size: 75px;
+    left: 80%;
+}
+
+
+/* ICONS BOTTOM */
+section .icons{
+    position: absolute;
+    bottom:  -35%;
+    right: 10%;
+}
+
+section .icons i{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+}
+section .icons i.fa-vk:hover{
+    color: rgb(0, 78, 180);
+}
+section .icons i.fa-instagram:hover{
+    color: rgb(187, 13, 65);
+}
+
+section .icons i.fa-viber:hover{
+    color: rgb(78, 0, 151);
+}
+
+
